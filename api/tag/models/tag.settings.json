@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "tag"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tagname": {
+      "type": "string"
+    },
+    "posts": {
+      "via": "tags",
+      "collection": "post",
+      "dominant": true
+    }
+  }
+}

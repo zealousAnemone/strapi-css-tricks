@@ -26,6 +26,9 @@
     "tags": {
       "via": "posts",
       "collection": "tag"
+    },
+    "author": {
+      "model": "author"
     }
   }
 }

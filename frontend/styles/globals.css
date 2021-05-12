@@ -1,16 +1,115 @@
 html,
 body {
+  height: 100vh;
+  background: url(/wave.png) no-repeat;
+  background-size: 100%;
+  background-color: #262626;
+
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  padding: 1rem;
+  margin: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 -2px 5px rgb(0 0 0 / 33%);
+}
+
+#site-name {
+  font-size: 2em;
+}
+
+#pages {
+  margin-left: 2em;
+}
+
+header a {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, Rubik, Lato,
+    Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+  font-style: normal;
+  font-size: 0.8em;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  padding: 1.2rem 1rem;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 3px 3px rgb(0 0 0 / 50%);
+}
+
+h2 {
+  font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, Rubik, Lato,
+    Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  letter-spacing: -0.05rem;
+  font-weight: 800;
+}
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2em;
+  margin: 2em;
+}
+.article {
+  background: #fff;
+  color: #474747;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.24));
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.24));
+  display: flex;
+  flex-direction: column;
+}
+
+.article-info {
+  margin: 1.2em;
+}
+
+.author-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+/* .featured {
+  display: grid;
+  grid-template-columns: 50% 50%;
+} */
+
+.tags {
+  font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, Rubik, Lato,
+    Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ff7a18;
+  font-size: 0.66rem;
+  -webkit-margin-end: 0.66rem;
+  margin-inline-end: 0.66rem;
 }

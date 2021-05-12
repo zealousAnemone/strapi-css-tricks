@@ -4,8 +4,7 @@ import styles from '../styles/Home.module.css';
 
 export default function Home({ articles }) {
   return (
-    <div>
-      <h1>Posts</h1>
+    <div className="article-grid">
       {articles.map((article) => (
         <ArticleCard article={article} />
       ))}

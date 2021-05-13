@@ -7,8 +7,12 @@ body {
 
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Sentinel SSm A, Sentinel SSm B, system-ui, -apple-system,
+    BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-size: clamp(12px, calc(0.7rem + 0.25vw), 20px);
+  font-weight: 400;
+  line-height: 1.7;
 }
 
 * {
@@ -112,4 +116,26 @@ img {
   font-size: 0.66rem;
   -webkit-margin-end: 0.66rem;
   margin-inline-end: 0.66rem;
+}
+
+.author-page {
+  padding: 40px;
+  color: #fff;
+}
+
+.author-page img {
+  width: 200px;
+  height: auto;
+  border: 1vw solid #262626;
+  border-radius: 50%;
+}
+
+.author-details {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.bio {
+  font-size: 1.4rem;
 }

@@ -44,6 +44,9 @@
     },
     "brief": {
       "type": "text"
+    },
+    "slug": {
+      "type": "uid"
     }
   }
 }

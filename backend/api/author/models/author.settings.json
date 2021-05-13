@@ -36,8 +36,11 @@
       "required": false,
       "pluginOptions": {}
     },
-    "posts": {
+    "articles": {
       "collection": "post"
+    },
+    "username": {
+      "type": "string"
     }
   }
 }

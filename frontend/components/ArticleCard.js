@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Article = ({ article }) => {
   const date = new Date(article.date).toDateString();
   return (
@@ -13,7 +15,10 @@ const Article = ({ article }) => {
         <div className="article-brief">{article.brief}</div>
         <p className="author-info">
           <img src={`http://localhost:1337${article.author.photo.url}`} />
-          {article.author.name} on {date}
+          <Link href={`/author/${article.author.username}`}>
+            {article.author.name}
+          </Link>{' '}
+          on {date}
         </p>
       </div>
     </div>

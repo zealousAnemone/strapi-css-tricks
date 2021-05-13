@@ -32,6 +32,7 @@ header {
 
 #site-name {
   font-size: 2em;
+  cursor: pointer;
 }
 
 #pages {
@@ -101,10 +102,6 @@ img {
   width: 100%;
   object-fit: cover;
 }
-/* .featured {
-  display: grid;
-  grid-template-columns: 50% 50%;
-} */
 
 .tags {
   font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, Rubik, Lato,

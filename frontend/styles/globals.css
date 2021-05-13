@@ -46,10 +46,15 @@ header a {
     Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
   font-style: normal;
   font-size: 0.8em;
-  text-decoration: none;
   font-weight: 500;
   text-align: center;
   padding: 1.2rem 1rem;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 h1 {
@@ -91,7 +96,12 @@ h2 {
   margin: 1.2em;
 }
 
-.author-info img {
+.article-info h2 {
+  cursor: pointer;
+}
+
+.author-info img,
+.article-details img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -135,4 +145,21 @@ img {
 
 .bio {
   font-size: 1.4rem;
+}
+
+.article-full article {
+  font-size: 1.2rem;
+  background: #fff;
+  color: #000;
+  overflow-wrap: break-word;
+  border-radius: 8px;
+  padding: 4rem;
+  margin: 40px;
+}
+.article-details {
+  color: #fff;
+}
+
+.article-author a {
+  color: #fff;
 }

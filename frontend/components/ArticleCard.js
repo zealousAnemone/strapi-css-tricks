@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const Article = ({ article }) => {
+const ArticleCard = ({ article }) => {
   const date = new Date(article.date).toDateString();
   return (
     <div className="article">
@@ -11,7 +11,9 @@ const Article = ({ article }) => {
         {article.tags.map((tag) => (
           <span className="tags">{tag.tagname}</span>
         ))}
-        <h2>{article.title}</h2>
+        <Link href={`/article/${article.slug}`}>
+          <h2>{article.title}</h2>
+        </Link>
         <div className="article-brief">{article.brief}</div>
         <p className="author-info">
           <img src={`http://localhost:1337${article.author.photo.url}`} />
@@ -25,4 +27,4 @@ const Article = ({ article }) => {
   );
 };
 
-export default Article;
+export default ArticleCard;

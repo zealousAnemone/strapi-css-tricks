@@ -1,5 +1,3 @@
-import ArticleCard from '../../components/ArticleCard';
-
 const Author = ({ author }) => {
   return (
     <div className="author-page">

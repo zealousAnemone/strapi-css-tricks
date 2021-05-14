@@ -9,7 +9,9 @@ const ArticleCard = ({ article }) => {
       </div>
       <div className="article-info">
         {article.tags.map((tag) => (
-          <span className="tags">{tag.tagname}</span>
+          <Link href={`/tag/${tag.tagname}`}>
+            <span className="tags">{tag.tagname}</span>
+          </Link>
         ))}
         <Link href={`/article/${article.slug}`}>
           <h2>{article.title}</h2>

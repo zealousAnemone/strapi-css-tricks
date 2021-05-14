@@ -1,6 +1,4 @@
-import fetchQuery from '../utils';
 import ArticleCard from '../components/ArticleCard';
-import styles from '../styles/Home.module.css';
 
 export default function Home({ articles }) {
   return (

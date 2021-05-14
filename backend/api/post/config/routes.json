@@ -1,5 +1,6 @@
 {
   "routes": [
+
     {
       "method": "GET",
       "path": "/posts",

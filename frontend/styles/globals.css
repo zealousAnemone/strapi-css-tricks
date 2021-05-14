@@ -123,6 +123,7 @@ img {
   font-size: 0.66rem;
   -webkit-margin-end: 0.66rem;
   margin-inline-end: 0.66rem;
+  cursor: pointer;
 }
 
 .author-page {
@@ -162,4 +163,19 @@ img {
 
 .article-author a {
   color: #fff;
+}
+
+.tag-page {
+  margin: 40px;
+}
+.tag-page h3 {
+  font-size: 1rem;
+  color: #ffdfc7;
+  text-transform: uppercase;
+  text-shadow: 0 3px 3px rgb(0 0 0 / 50%);
+  margin-bottom: 0;
+}
+
+.tag-page h1 {
+  margin-top: 0;
 }

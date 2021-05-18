@@ -1,0 +1,25 @@
+{
+  "name": "strapi-css-tricks",
+  "version": "1.0.0",
+  "description": "CSS Tricks clone using Strapi and NextJS",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && npm run develop",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zealousAnemone/strapi-css-tricks.git"
+  },
+  "author": "Veronica Stork",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zealousAnemone/strapi-css-tricks/issues"
+  },
+  "homepage": "https://github.com/zealousAnemone/strapi-css-tricks#readme",
+  "dependencies": {
+    "concurrently": "^6.1.0"
+  }
+}
